@@ -1,6 +1,7 @@
 import React from 'react';
 import { Carousel, Container } from 'react-bootstrap';
-const MyHeader = () => {
+
+function MyHeader() {
   return (
     <>
       <Carousel indicators={false}>
@@ -36,12 +37,14 @@ const MyHeader = () => {
 
           <Carousel.Caption>
             <h3>Third slide label</h3>
-            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+            <p>
+              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+            </p>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
-      <Container fluid className="min-height-20 bg-primary"></Container>
-      <Container fluid className="min-height-20"></Container>
+      <Container fluid className="min-height-20 bg-primary" />
+      <Container fluid className="min-height-20" />
       <Container fluid className="bg-primary text-light pt-3 pb-2">
         <h2 className="text-center">Nuestros Servicios</h2>
       </Container>
@@ -63,17 +66,21 @@ const MyHeader = () => {
           <h3>Hola</h3>
           <Carousel.Caption>
             <h3>Third slide label</h3>
-            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+            <p>
+              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+            </p>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
 
       {/* <Container fluid className="min-height-45 bg-secondary"></Container> */}
       <Container fluid className="bg-primary text-light pt-3 pb-2">
-        <h6 className="text-center">Elegí los que se adecuen y personaliza la app</h6>
+        <h6 className="text-center">
+          Elegí los que se adecuen y personaliza la app
+        </h6>
       </Container>
     </>
   );
-};
+}
 
 export default MyHeader;

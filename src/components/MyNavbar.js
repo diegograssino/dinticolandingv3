@@ -1,12 +1,16 @@
 import React from 'react';
 import { Container, Navbar, Nav, Offcanvas, Button } from 'react-bootstrap';
 
-const MyNavbar = () => {
+function MyNavbar() {
   return (
     <Navbar bg="primary" variant="dark" expand={false}>
       <Container fluid>
         <Navbar.Toggle aria-controls="offcanvasNavbar" className="me-5" />
-        <Navbar.Offcanvas id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" placement="start">
+        <Navbar.Offcanvas
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+          placement="start"
+        >
           <Offcanvas.Header closeButton>
             <Offcanvas.Title id="offcanvasNavbarLabel">dintico</Offcanvas.Title>
           </Offcanvas.Header>
@@ -18,7 +22,11 @@ const MyNavbar = () => {
           </Offcanvas.Body>
         </Navbar.Offcanvas>
         <Navbar.Brand href="#">
-          <img className="logo-size" src={`${process.env.PUBLIC_URL}/assets/img/logodintico.png`} alt="Third slide" />
+          <img
+            className="logo-size"
+            src={`${process.env.PUBLIC_URL}/assets/img/logodintico.png`}
+            alt="Third slide"
+          />
         </Navbar.Brand>
         <Button variant="outline-light" className="fs-6">
           <small>INGRESAR</small>
@@ -26,6 +34,6 @@ const MyNavbar = () => {
       </Container>
     </Navbar>
   );
-};
+}
 
 export default MyNavbar;
