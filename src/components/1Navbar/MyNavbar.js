@@ -12,7 +12,13 @@ function MyNavbar() {
           placement="start"
         >
           <Offcanvas.Header closeButton>
-            <Offcanvas.Title id="offcanvasNavbarLabel">dintico</Offcanvas.Title>
+            <Offcanvas.Title id="offcanvasNavbarLabel">
+              <img
+                className="logo-size"
+                src={`${process.env.PUBLIC_URL}/assets/img/logoHome.png`}
+                alt="Third slide"
+              />
+            </Offcanvas.Title>
           </Offcanvas.Header>
           <Offcanvas.Body>
             <Nav className="justify-content-end flex-grow-1 pe-3">

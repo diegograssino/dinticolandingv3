@@ -6,7 +6,7 @@ import { BsGraphUp } from 'react-icons/bs';
 
 function RoundedButtons() {
   return (
-    <Container>
+    <Container className="px-3">
       <Row>
         <Col xs={4}>
           <div className="position-relative min-height-20">
